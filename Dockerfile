@@ -64,9 +64,6 @@ RUN set -x && \
 RUN set -x && \
     mkdir -p /var/www/splash
 
-# Temporary inclusion while UP-2020083001 is private
-COPY UP-2020083001.tar.gz /init/splash-v0.2.0.tar.gz
-
 COPY supervisor-splash.conf /etc/supervisor/conf.d/splash.conf
 
 COPY splash-setup.sh /init/splash-setup.sh
